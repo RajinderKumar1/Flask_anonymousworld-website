@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>My  Profile</title>
+   <link rel = "stylesheet"  href=   " {{ url_for( 'static' , filename = "style.css" )}}"></link>
+</head>
+<body>
+<h2>
+<a href = "{{ url_for( 'static' , filename = "Login.html" )}}"  id =  log >Login</a></h2>
+<div  id = profile>
+
+<img id = pro src =  "{{ url_for( 'static' , filename = "Profile.jpg" )}}">
+
+<h2 id = "colo">My Profile</h2>
+
+</img>
+
+<label id = "colo">Name  :</label> <h4 id = "colo" >{{params['user_name']}}</h4>
+<br><h5 id = "colo">Your id Is Anonymous .</h5></br>
+
+<br></br>
+<form action = "logout" >
+<button style = " margin-left:45%;">Log out</button>
+</form>
+</body>
+</html>

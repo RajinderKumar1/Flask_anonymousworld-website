@@ -1,0 +1,34 @@
+<!doctype html> 
+
+<html> 
+{% extends "layout.html" %}
+<body> 
+{% block body %}
+ 
+<h1 style = "color : white" style = "margin-left : 400px">Thanks for Your Feedback</h1>
+
+<table border = 1 style = "color : white "> 
+
+{% for key, value in result.items() %} 
+
+
+ 
+
+<tr> 
+
+<th> {{ key }} </th> 
+
+<td> {{ value }} </td> 
+
+</tr> 
+
+ 
+
+{% endfor %} 
+
+</table>  
+{% endblock %}
+</body> 
+
+</html> 
+

@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>contect us</title>
+    
+<link rel = "stylesheet"  href=  "{{ url_for( 'static' , filename = "style.css" )}}"></link>
+</head>
+<body>
+<h2>
+
+<div  id = profile>
+
+<img id = pro src =  " {{ url_for ( 'static' , filename =  "Contect.png" ) }}" >
+
+<h2 id = "colo">Enter Your Opinion</h2>
+
+</img>
+<form action = "/contect.html" method = "POST"    id = formp>
+
+<div>
+<label for = name>Name</label>
+<input name = name class = siz   id =name type = text placeholder = " Anonymous "></inputtextarea>>
+</div>
+<br></br>
+
+<div>
+<label for = pass >message : </label>
+<textarea rows = 5  cols  = 50   name = msg class = siz  id =pass type = textarea placeholder = this is awesome platfrome ></textarea>>
+</div>
+<br></br>
+
+
+
+
+<div>
+<label for = name></label>
+<button class =  btns id =name type = submit >Send</button>
+</div>
+</form>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+
+{% extends "layout.html" %}
+<html>
+<head>
+    <title></title>
+   
+</head>
+<body>
+{% block body %}
+<form action = "/postnew" method = "POST"    id = formp>
+
+<div>
+<label for = title>Post Title</label>
+<input  type = text  name = title ></input>
+</div>
+<br></br>
+<div>
+<label for = content >Content : </label>
+<textarea rows = "10"  style = "width : 300px ;   "   name = content class = siz  id =pass type = textarea placeholder = "write content here...." ></textarea>
+</div>
+<br></br>
+
+
+
+
+<div>
+<label for = name></label>
+<button class =  btns  style = "margin-left : 160px ; " id =name type = submit >Post now</button>
+</div>
+</form>
+
+<br></br>
+
+{% endblock %}
+</body>
+</html>

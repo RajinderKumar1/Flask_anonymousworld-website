@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Profile</title>
+   <link rel = "stylesheet"  href=   " {{ url_for( 'static' , filename = "style.css" )}}"></link>
+</head>
+<body>
+<h2>
+<a href = "{{ url_for( 'static' , filename = "Login.html" )}}"  id =  log >Login</a></h2>
+<div  id = profile>
+
+<img id = pro src =  "{{ url_for( 'static' , filename = "Profile.jpg" )}}">
+
+<h2 id = "colo">Sign up</h2>
+
+</img>
+<form action = #  id = formp>
+
+<div>
+<label for = name>Username</label>
+<input class = siz   id =name type = text placeholder = " Anonymous "></input>
+</div>
+<br></br>
+
+<div>
+<label for = pass >Password</label>
+<input class = siz  id =pass type = text placeholder = unknow15#8@></input>
+</div>
+<br></br>
+
+<div>
+<label for = mail >Email</label>
+<input class = siz  id =mail type = text placeholder = anonoymus@gmail.com></input>
+</div>
+<br></br>
+
+<div>
+<label for = mob>Mobile</label>
+<input class = siz  id =mob  type = number placeholder = 123456789 ></input>
+</div>
+<br></br>
+
+<div>
+<label for = tc >Agree all T&C</label>
+<input class = siz  id =tc type = checkbox></input>
+</div>
+
+<br></br>
+
+
+<div>
+<label for = name></label>
+<input class =  btns id =name type = button value =" Sign up "></input>
+</div>
+</form>
+
+</div>
+<footer>
+
+
+
+</footer>
+</body>
+</html>

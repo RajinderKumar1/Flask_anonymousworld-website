@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title></title>
+  
+ <link rel = "stylesheet"  href= "{{ url_for ('static' , filename ="style.css")}}"></link>
+</head>
+<body>
+<br>
+</br>
+<h2 style = "text-align:center; color : white;">You have  to login first for posting any post !</h2>
+<h2>
+<a href = "{{ url_for ( 'static' , filename = "profile.html" ) }}" id =  log >Signup</a></h2>
+<div  id = profile>
+
+<img id = pro src = "{{ url_for ( 'static' , filename = "Profile.jpg" )}}">
+
+<h2 id = "colo">Login</h2>
+
+</img>
+<form action = '/static/Login.html' method = 'post'  id = formp>
+
+<div>
+<label for = name>Username</label>
+<input class = siz  name = uname  id =name type = text placeholder = " Anonymous "></input>
+</div>
+<br></br>
+
+<div>
+<label for = pass >Password</label>
+<input class = siz  id =pass name = upass type = text placeholder = unknow15#8@></input>
+</div>
+<br></br>
+
+
+
+
+<div>
+<label for = name></label>
+<button class =  btns id =name value = submit  >Log In</button>
+</div>
+</form>
+
+</div>
+</body>
+</html>
